@@ -1,0 +1,9 @@
+void SmapInit(void);
+void SmapXmit(void *, int);
+void SmapReceive(void *, int);
+
+DECLARE_EXPORT_TABLE(smap, 1, 1)
+	RELEASE_EXPORT_FUNC(SmapInit)
+	RELEASE_EXPORT_FUNC(SmapXmit)
+	RELEASE_EXPORT_FUNC(SmapReceive)
+END_EXPORT_TABLE
